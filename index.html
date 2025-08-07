@@ -1,0 +1,68 @@
+<html style="text-align:center;" lang="fa">
+<head>
+<style>
+body{
+background-image:url(yoyo.jpeg);
+background-size:cover;
+}
+</style>
+
+</head>
+<body>
+
+<h1 style="background-color:black; color:blue;">جواب</h1>
+<h1 id="h1" style="background-color:black; color:blue; height:50%; width:100%;"></h1>
+<button onclick="number()" style="background-image:url(kh.jpeg); color:green; height:5%; width:30%; background-size:cover;">ماشین حساب</button>
+<br>
+<form style="background-color:black;">
+<label style="color:blue;">نام</label><br>
+<input onchange="inp1()"><br>
+<label style="color:blue;">نام خانوادگی</label><br>
+<input onchange="inp2()"><br>
+<label style="color:blue;">پیشنهاد</label><br>
+<input onchange="inp3()"><br>
+<br>
+<button onclick="mahyar()" type="submit" style="color:blue;">ارسال</button>
+<button type="reset" style="color:blue;">بستن</button>
+</form>
+<br>
+<div style="background-color:black; color:blue;">اگه میخوای بیشتر در مورد من و فیلم ها و اموزش های من با خبر بشی منو در فضای مجازی دنبال کن!</div>
+        <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=z2dbo7v" target="_blank" title=""><img src="instagram.jpeg" alt="اینیستاگرام من" style="height:30px; width:30px;" />اینیستاگرام من</a><br>
+        <a href="https://www.youtube.com/@%D9%85%D9%87%DB%8C%D8%A7%D8%B1%D9%85%D9%86%D8%B8%D8%B1%DB%8C" target="_blank" title=""><img src="youtube.jpeg" alt="یوتیوب من"  style="height:31px; width:43px;" />یوتیوب من</a><br>
+        <a href="https://t.me/minecraftmahyar" target="_blank" title="تلگرام"><img src="t.me.jpeg" alt="تلگرام من" style="height:30px; width:30px;" />تلگرام من</a>
+
+<script>
+function number(){
+        const num1 = parseFloat(prompt("عدد اول را وارد کنید:"));
+        const num2 = parseFloat(prompt("عدد دوم را وارد کنید:"));
+        const sum = num1 + num2;
+        document.getElementById("h1").innerHTML = sum;
+}
+function toggleMenu() {
+      document.getElementById("menu").classList.toggle("show");
+    }
+
+    function mahyar(){
+alert("نظر شما با موفقیت ثبت شد")
+}
+
+function inp1(){
+console.log("name input")
+}
+
+function inp2(){
+console.log("family input")
+}
+
+function inp3(){
+console.log("offer input")
+}
+
+function nima(){
+alert("به mahyar.+ خوش امدید")
+}
+
+setTimeout(nima,4000);
+</script>
+</body>
+</html>
